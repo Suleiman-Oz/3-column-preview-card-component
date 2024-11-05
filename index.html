@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root {
+      --pri-bright-orange: hsl(31, 77%, 52%);
+      --pri-dark-cyan: hsl(184, 100%, 22%);
+      --pri-very-dark-cyan: hsl(179, 100%, 13%);
+      --very-light-gray: hsl(0, 0%, 95%);
+      --transparent-white: hsla(0, 0%, 100%, 0.75);
+    }
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background-color: var(--transparent-white);
+      margin: 50px 0;
+      /* margin: 50px 450px 50px; */
+    }
+    .btn{
+      background-color: var(--very-light-gray);
+      color: white;
+      padding: 15px 30px;
+      margin: 20px 0;
+      text-decoration: none;
+      border-radius: 30px;
+      border: none;
+      font-size: 18px;
+    }
+    .btn-sedans{
+      color: var(--pri-bright-orange);
+    }
+    .btn-sedans:hover{
+      background-color: var(--pri-bright-orange);
+      color: white;
+      border: 1px solid var(--transparent-white);
+    }
+    .btn-suv{
+      color: var(--pri-dark-cyan);
+    }
+    .btn-suv:hover{
+      background-color: var(--pri-dark-cyan);
+      color: white;
+      border: 1px solid var(--transparent-white);
+    }
+    .btn-luxury{
+      color: var(--pri-very-dark-cyan);
+    }
+    .btn-luxury:hover{
+      background-color: var(--pri-very-dark-cyan);
+      color: white;
+      border: 1px solid var(--transparent-white);
+    }
+    .card {
+      background-color: white;
+      padding: 50px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 0 20px;
+      width: 300px;
+    }
+    .sedans{
+      background-color: var(--pri-bright-orange);
+    }
+    .suvs{
+      background-color: var(--pri-dark-cyan);
+    }
+    .luxury{
+      background-color: var(--pri-very-dark-cyan);
+    }
+    img {
+      margin-bottom: 30px;
+    }
+    .img-sedans{
+      background-color: var(--pri-bright-orange);
+    }
+    .img-suv{
+      background-color: var(--pri-dark-cyan);
+    }
+    .img-luxury{
+      background-color: var(--pri-very-dark-cyan);
+    }
+    h1 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: var(--very-light-gray);
+    }
+    p {
+      margin-bottom: 30px;
+      color: var(--transparent-white);
+    }
+    @media (min-width: 1440px) {
+      .container {
+        display: flex;
+      }
+      .card {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="col">
+<div class="container">
+  <div class="sedans card">
+  <img class="img-sedans" src="./images/icon-sedans.svg" alt="sedans icon" >
+  <h1>Sedans</h1>
+  <p>
+    Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.
+  </p>
+  <button class="btn btn-sedans">Learn More</button>
+  </div>
+
+  <div class="suvs card">
+  <img class="img-suv" src="./images/icon-sedans.svg" alt="sedans icon" >
+  <h1>SUVs</h1>
+  <p>
+    Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.
+  </p>
+  <button class="btn btn-suv">Learn More</button>
+  </div>
+
+  <div class="luxury card">
+  <img class="img-luxury" src="./images/icon-sedans.svg" alt="sedans icon" >
+  <h1>Luxury</h1>
+  <p>
+    Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.
+  </p>
+  <button class="btn btn-luxury">Learn More</button>
+  </div>
+</div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Suleiman-Oz">Suleiman</a>.
+  </div>
+</body>
+</html>
